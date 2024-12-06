@@ -7,7 +7,7 @@ LABEL description="API into running msconvert.exe to convert vendor files to mzM
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-    pip
+    pip python3
 
 RUN pip install --upgrade pip
 RUN mkdir /app
